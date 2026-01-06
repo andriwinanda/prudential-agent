@@ -18,11 +18,20 @@
     <meta property="og:description"
         content="Konsultasi asuransi Prudential secara gratis. Edukasi jujur, pendampingan klaim, dan solusi sesuai kebutuhan." />
     <meta property="og:type" content="website" />
-    <meta name="google-site-verification" content="google-site-verification=bvZcAfEAf9y3KpP_PgUmfcbFxkTqGoB7Ptrib0nlhqA" />
-
     <title>Agen Asuransi Prudential | Proteksi Masa Depan</title>
     <link rel="icon" type="image/x-icon" href="./favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NWV4H2DS');</script>
+    <!-- End Google Tag Manager -->
     <style>
         :root {
             --primary: #c8102e;
@@ -71,12 +80,13 @@
             font-size: 1.4rem;
             font-weight: 700;
         }
+
         .nav h1 span {
             font-size: 1rem;
             font-weight: 400;
-            
+
         }
-        
+
         .nav ul {
             list-style: none;
             display: flex;
@@ -97,7 +107,8 @@
         /* ===== HERO ===== */
         .hero {
             height: 100vh;
-            background: url('./hero.png') right/cover no-repeat;
+            /* background: linear-gradient(rgba(255, 255, 255, 0.323), rgba(255, 255, 255, 0.321)), url('./hero.png') right/cover no-repeat !important; */
+            background: url('./hero.png') right/cover no-repeat !important;
             display: flex;
             align-items: center;
             color: var(--primary);
@@ -114,6 +125,7 @@
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
+            line-height: 50px;
         }
 
         .hero p {
@@ -318,6 +330,10 @@
         }
 
         @media (max-width: 768px) {
+            .hero {
+                background: linear-gradient(rgba(255, 255, 255, 0.6), rgb(255, 255, 255)), url('./hero.png') right/cover no-repeat !important;
+            }
+
             .burger {
                 display: flex;
             }
@@ -346,7 +362,7 @@
 <body>
 
     <!-- ===== STRUCTURED DATA (SEO) ===== -->
-    <script type="application/ld+json">
+    <!-- <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "InsuranceAgency",
@@ -360,7 +376,13 @@
       "telephone": "+62-8xx-xxxx-xxxx"
     }
   }
-  </script>
+  </script> -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWV4H2DS" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- NAVBAR -->
     <header>
@@ -426,7 +448,8 @@
         <div class="container about">
             <div>
                 <h3>Tentang Saya</h3>
-                <p>Saya <strong>Andri Winanda</strong> agen resmi Prudential Indonesia yang berfokus pada edukasi keuangan, bukan sekadar jualan
+                <p>Saya <strong>Andri Winanda</strong> agen resmi Prudential Indonesia yang berfokus pada edukasi
+                    keuangan, bukan sekadar jualan
                     produk. Pendekatan saya personal, jujur, dan jangka panjang.</p>
                 <p><strong>Visi:</strong> Membantu lebih banyak keluarga Indonesia hidup lebih tenang secara finansial.
                 </p>
