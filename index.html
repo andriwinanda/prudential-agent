@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ===== SEO BASIC ===== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Agen Asuransi Prudential resmi. Konsultasi asuransi jiwa, kesehatan, pendidikan, dan investasi. Edukasi jujur & pendampingan klaim." />
+    <meta name="keywords"
+        content="agen prudential, asuransi prudential, agen asuransi terpercaya, asuransi kesehatan prudential, asuransi jiwa" />
+    <meta name="author" content="Agen Asuransi Prudential" />
+
+    <!-- Open Graph / Social SEO -->
+    <meta property="og:title" content="Agen Asuransi Prudential | Konsultasi & Proteksi Finansial" />
+    <meta property="og:description"
+        content="Konsultasi asuransi Prudential secara gratis. Edukasi jujur, pendampingan klaim, dan solusi sesuai kebutuhan." />
+    <meta property="og:type" content="website" />
+
+    <title>Agen Asuransi Prudential | Proteksi Masa Depan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #c8102e;
+            /* Prudential red */
+            --dark: #1f2937;
+            --light: #f9fafb;
+            --gray: #6b7280;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth !important;
+        }
+
+        body {
+            background: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* ===== NAVBAR ===== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+        }
+
+        .nav {
+            max-width: 1200px;
+            margin: auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav h1 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+        .nav h1 span {
+            font-size: 1rem;
+            font-weight: 400;
+            
+        }
+        
+        .nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav a:hover {
+            color: var(--primary);
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            height: 100vh;
+            background: url('./hero.png') right/cover no-repeat;
+            display: flex;
+            align-items: center;
+            color: var(--primary);
+            padding-top: 80px;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            /* margin: auto; */
+            padding: 2rem;
+
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            color: var(--dark);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.9rem 2rem;
+            background: var(--primary);
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #a50d25;
+        }
+
+        /* ===== SECTIONS ===== */
+        section {
+            padding: 5rem 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h3 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title p {
+            color: var(--gray);
+        }
+
+        /* ===== SERVICES ===== */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card h4 {
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        /* ===== ABOUT ===== */
+        .about {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about img {
+            width: 100%;
+            border-radius: 30px;
+        }
+
+        /* ===== TESTIMONIAL ===== */
+        .testimonial {
+            background: var(--primary);
+            color: white;
+        }
+
+        .testimonial-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 20px;
+        }
+
+        /* ===== CTA ===== */
+        .cta {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary), #8b0d22);
+            color: white;
+        }
+
+        .cta h3 {
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: #111827;
+            color: #9ca3af;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer span {
+            color: white;
+        }
+
+        .text-light {
+            color: var(--light) !important;
+        }
+
+        /* ===== RESPONSIVE MOBILE ===== */
+        @media (max-width: 768px) {
+            .nav ul {
+                display: none;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            section {
+                padding: 3rem 1.5rem;
+            }
+
+            .section-title h3 {
+                font-size: 1.8rem;
+            }
+
+            .about {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .about img {
+                margin-top: 2rem;
+            }
+
+            .cta h3 {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                height: auto;
+                padding: 6rem 1rem 4rem;
+            }
+
+            .hero h2 {
+                font-size: 1.6rem;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            footer {
+                font-size: 0.85rem;
+            }
+        }
+
+        /* ===== BURGER MENU ===== */
+        .burger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 6px;
+        }
+
+        .burger span {
+            width: 25px;
+            height: 3px;
+            background: var(--dark);
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .burger {
+                display: flex;
+            }
+
+            .nav ul {
+                position: absolute;
+                top: 70px;
+                right: 20px;
+                background: white;
+                flex-direction: column;
+                width: 200px;
+                padding: 1.5rem;
+                gap: 1rem;
+                border-radius: 16px;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+                display: none;
+            }
+
+            .nav ul.active {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== STRUCTURED DATA (SEO) ===== -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "InsuranceAgency",
+    "name": "Agen Asuransi Prudential",
+    "description": "Agen resmi Prudential Indonesia. Konsultasi asuransi jiwa, kesehatan, pendidikan, dan investasi.",
+    "areaServed": "Indonesia",
+    "availableLanguage": "id",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "telephone": "+62-8xx-xxxx-xxxx"
+    }
+  }
+  </script>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="nav">
+            <h1>PRUDENTIAL <span>Agent</span> </h1>
+
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Produk</a></li>
+                <li><a href="#about">Tentang Saya</a></li>
+                <li><a href="#contact">Konsultasi</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <!-- <h2>Proteksi Finansial untuk Masa Depan Keluarga</h2> -->
+            <h1>Agen Asuransi Resmi Jakarta</h1>
+            <p>Membantu Anda dalam memilih solusi asuransi Prudential yang tepat, transparan, dan sesuai kebutuhan hidup
+                Anda.</p>
+            <a href="#contact" class="btn">Konsultasi Gratis</a>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <div class="container">
+            <div class="section-title">
+                <h3>Solusi Asuransi</h3>
+                <p>Produk perlindungan dan perencanaan keuangan</p>
+            </div>
+            <div class="services">
+                <div class="service-card">
+                    <h4>Asuransi Jiwa</h4>
+                    <p>Perlindungan finansial bagi keluarga jika terjadi risiko tak terduga.</p>
+                </div>
+                <div class="service-card">
+                    <h4>Asuransi Kesehatan</h4>
+                    <p>Biaya rawat inap dan perawatan medis dengan standar rumah sakit terbaik.</p>
+                </div>
+                <div class="service-card">
+                    <h4>Pendidikan Anak</h4>
+                    <p>Perencanaan dana pendidikan agar masa depan anak tetap terjamin.</p>
+                </div>
+                <div class="service-card">
+                    <h4>Investasi & Proteksi</h4>
+                    <p>Kombinasi proteksi dan pertumbuhan dana jangka panjang.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container about">
+            <div>
+                <h3>Tentang Saya</h3>
+                <p>Saya adalah agen resmi Prudential Indonesia yang berfokus pada edukasi keuangan, bukan sekadar jualan
+                    produk. Pendekatan saya personal, jujur, dan jangka panjang.</p>
+                <p><strong>Visi:</strong> Membantu lebih banyak keluarga Indonesia hidup lebih tenang secara finansial.
+                </p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Agen Asuransi" />
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="testimonial">
+        <div class="container">
+            <div class="section-title">
+                <h3>Apa Kata Nasabah</h3>
+                <p class="text-light">Kepercayaan dibangun dari pengalaman nyata</p>
+            </div>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <p>"Penjelasannya simpel dan nggak ribet. Saya jadi paham asuransi."</p>
+                    <strong>- Andi, Jakarta</strong>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Responsif dan benar-benar bantu saat klaim."</p>
+                    <strong>- Rina, Medan</strong>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Ngerasa ditemani, bukan ditinggal setelah beli."</p>
+                    <strong>- Budi, Surabaya</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <h3 style="margin-bottom: 0;">Mulai Konsultasi Hari Ini</h3>
+            <p class="text-light" style="padding-bottom: 10px;">Gratis, tanpa kewajiban membeli.</p>
+            <a href="https://wa.me/6281365569764" class="btn">Chat WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 <span>Agen Asuransi Prudential</span>. Edukasi & Proteksi Finansial.</p>
+    </footer>
+
+</body>
+
+<script>
+    const burger = document.getElementById('burger');
+    const navMenu = document.getElementById('navMenu');
+
+    burger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
+
+</html>
